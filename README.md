@@ -1,4 +1,4 @@
-# VPN爸爸 | 8月21日22.8M/S|免费SSR/Clash/Shadowrocket/V2ray节点推荐，安卓机场梯子购买推荐  更新时间 2025-08-21 19:57:11
+# VPN爸爸 | 8月27日23M/S|免费SSR/V2ray/Clash/Shadowrocket节点推荐，安卓机场梯子购买推荐  更新时间 2025-08-27 10:05:26
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnbaba.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://vpnbaba.github.io/uploads/2025/08/0-20250821.yaml
-- https://vpnbaba.github.io/uploads/2025/08/1-20250821.yaml
-- https://vpnbaba.github.io/uploads/2025/08/2-20250821.yaml
-- https://vpnbaba.github.io/uploads/2025/08/3-20250821.yaml
-- https://vpnbaba.github.io/uploads/2025/08/4-20250821.yaml
+- https://vpnbaba.github.io/uploads/2025/08/0-20250827.yaml
+- https://vpnbaba.github.io/uploads/2025/08/1-20250827.yaml
+- https://vpnbaba.github.io/uploads/2025/08/2-20250827.yaml
+- https://vpnbaba.github.io/uploads/2025/08/3-20250827.yaml
+- https://vpnbaba.github.io/uploads/2025/08/4-20250827.yaml
 
 ### V2ray订阅链接
 
-- https://vpnbaba.github.io/uploads/2025/08/0-20250821.txt
-- https://vpnbaba.github.io/uploads/2025/08/1-20250821.txt
-- https://vpnbaba.github.io/uploads/2025/08/2-20250821.txt
-- https://vpnbaba.github.io/uploads/2025/08/3-20250821.txt
-- https://vpnbaba.github.io/uploads/2025/08/4-20250821.txt
+- https://vpnbaba.github.io/uploads/2025/08/0-20250827.txt
+- https://vpnbaba.github.io/uploads/2025/08/1-20250827.txt
+- https://vpnbaba.github.io/uploads/2025/08/2-20250827.txt
+- https://vpnbaba.github.io/uploads/2025/08/3-20250827.txt
+- https://vpnbaba.github.io/uploads/2025/08/4-20250827.txt
 
 ### Sing-box订阅链接
 
-- https://vpnbaba.github.io/uploads/2025/08/20250821.json
+- https://vpnbaba.github.io/uploads/2025/08/20250827.json
 
 ## 更多clash节点订阅 ：
 
