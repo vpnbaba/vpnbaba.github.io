@@ -1,4 +1,4 @@
-# VPN爸爸 | 10月12日21.4M/S|免费SSR节点/Clash节点/V2ray节点/Shadowrocket节点/Singbox节点节点推荐，安卓机场梯子购买推荐  更新时间 2025-10-12 10:05:02
+# VPN爸爸 | 10月24日19.7M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐  更新时间 2025-10-24 10:57:19
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnbaba.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://vpnbaba.github.io/uploads/2025/10/0-20251012.yaml
-- https://vpnbaba.github.io/uploads/2025/10/1-20251012.yaml
-- https://vpnbaba.github.io/uploads/2025/10/2-20251012.yaml
-- https://vpnbaba.github.io/uploads/2025/10/3-20251012.yaml
-- https://vpnbaba.github.io/uploads/2025/10/4-20251012.yaml
+- https://vpnbaba.github.io/uploads/2025/10/0-20251024.yaml
+- https://vpnbaba.github.io/uploads/2025/10/1-20251024.yaml
+- https://vpnbaba.github.io/uploads/2025/10/2-20251024.yaml
+- https://vpnbaba.github.io/uploads/2025/10/3-20251024.yaml
+- https://vpnbaba.github.io/uploads/2025/10/4-20251024.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://vpnbaba.github.io/uploads/2025/10/0-20251012.txt
-- https://vpnbaba.github.io/uploads/2025/10/1-20251012.txt
-- https://vpnbaba.github.io/uploads/2025/10/2-20251012.txt
-- https://vpnbaba.github.io/uploads/2025/10/3-20251012.txt
-- https://vpnbaba.github.io/uploads/2025/10/4-20251012.txt
+- https://vpnbaba.github.io/uploads/2025/10/0-20251024.txt
+- https://vpnbaba.github.io/uploads/2025/10/1-20251024.txt
+- https://vpnbaba.github.io/uploads/2025/10/2-20251024.txt
+- https://vpnbaba.github.io/uploads/2025/10/3-20251024.txt
+- https://vpnbaba.github.io/uploads/2025/10/4-20251024.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://vpnbaba.github.io/uploads/2025/10/20251012.json
+- https://vpnbaba.github.io/uploads/2025/10/20251024.json
 
 ## 更多Clash节点订阅 ：
 
