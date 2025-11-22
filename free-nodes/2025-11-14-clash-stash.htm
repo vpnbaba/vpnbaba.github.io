@@ -125,22 +125,18 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2025-11-13-clash-verge-rev-node-share.htm">VPN爸爸 | 11月13日19.7M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></p>
+        <p>下一个：<a href="/free-nodes/2025-11-15-clash-node-daily-updates.htm">VPN爸爸 | 11月15日18.7M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点节点推荐，安卓机场梯子购买推荐</a></p>
     </div>
 <h4>FAQ</h4>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的 UDP 转发功能需要注意什么？</h5></div>
-    <div class="panel-body">
-        SSR 的 UDP 转发需要服务端和客户端同时开启，同时确保服务器防火墙允许 UDP 通信。UDP 流量不可靠，可能在高丢包网络中导致连接中断，需要测试稳定性。<hr />    </div>
-</div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Surfboard 的配置文件可以与 Clash 通用吗？</h5></div>
     <div class="panel-body">
         Surfboard 基于 Clash 核心，因此支持大部分 YAML 配置文件，但部分字段如 rule-provider、external-controller 等可能不兼容。建议使用订阅转换工具将 Clash 文件转换为 Surfboard 兼容格式导入。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的 QUIC 协议相比 TCP 有什么优势？</h5></div>
+    <div class="panel-heading"><h5>Surfboard 能否同步 iCloud 配置？</h5></div>
     <div class="panel-body">
-        QUIC 协议基于 UDP，减少了握手延迟，支持多路复用和拥塞控制优化。Hysteria2 利用 QUIC 提供更低延迟、更高稳定性的网络连接，尤其适合高延迟或丢包环境。<hr />    </div>
+        可以。Surfboard 支持 iCloud 同步功能，用户可在不同苹果设备上共享同一配置文件。这样即使更换手机或重装系统，也能自动恢复节点与分流设置。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 使用 AEAD 加密后连接性能如何？</h5></div>
@@ -148,14 +144,14 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         AEAD 加密在保证数据安全的同时，性能开销较低，抗重放攻击能力强。高封锁环境下更稳定，同时减少流量特征泄露，适合长时间和高安全性需求的网络连接。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 的延迟测试准确吗？</h5></div>
-    <div class="panel-body">
-        Matsuri 的延迟测试使用 ICMP 与 TCP 双重检测方式，可较准确反映节点实际响应时间。不过受网络波动影响，建议多次测试并结合速度测试结果综合判断。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 如何手动导入节点？</h5></div>
     <div class="panel-body">
         SSR 节点通常以“ssr://”链接形式提供。用户可在客户端中点击“添加节点”或“导入链接”，粘贴该字符串后保存即可。程序会自动解析服务器地址、端口、加密方式等参数。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS + Reality 与 Trojan 在性能上差异大吗？</h5></div>
+    <div class="panel-body">
+        两者性能相近。VLESS + Reality 伪装更自然，适合强封锁地区；Trojan 则依托标准 TLS 实现高速连接。选择取决于服务器支持与环境稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 是否支持多订阅源？</h5></div>
@@ -168,14 +164,19 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         SSR（ShadowsocksR）是 Shadowsocks 的增强版本，增加了多种混淆与加密方式，提高了抗封锁能力。与原版相比，SSR 的兼容性更强，但目前已停止维护，许多用户正逐渐迁移到更先进的 V2Ray 或 Trojan 协议上。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + Reality 与 Trojan 在性能上差异大吗？</h5></div>
+    <div class="panel-heading"><h5>Matsuri 的延迟测试准确吗？</h5></div>
     <div class="panel-body">
-        两者性能相近。VLESS + Reality 伪装更自然，适合强封锁地区；Trojan 则依托标准 TLS 实现高速连接。选择取决于服务器支持与环境稳定性。<hr />    </div>
+        Matsuri 的延迟测试使用 ICMP 与 TCP 双重检测方式，可较准确反映节点实际响应时间。不过受网络波动影响，建议多次测试并结合速度测试结果综合判断。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 能否同步 iCloud 配置？</h5></div>
+    <div class="panel-heading"><h5>SSR 的 UDP 转发功能需要注意什么？</h5></div>
     <div class="panel-body">
-        可以。Surfboard 支持 iCloud 同步功能，用户可在不同苹果设备上共享同一配置文件。这样即使更换手机或重装系统，也能自动恢复节点与分流设置。    </div>
+        SSR 的 UDP 转发需要服务端和客户端同时开启，同时确保服务器防火墙允许 UDP 通信。UDP 流量不可靠，可能在高丢包网络中导致连接中断，需要测试稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 的 QUIC 协议相比 TCP 有什么优势？</h5></div>
+    <div class="panel-body">
+        QUIC 协议基于 UDP，减少了握手延迟，支持多路复用和拥塞控制优化。Hysteria2 利用 QUIC 提供更低延迟、更高稳定性的网络连接，尤其适合高延迟或丢包环境。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -204,16 +205,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-10-25-clash-verge-rev-node.htm" title="VPN爸爸 | 10月25日19.6M/S|免费Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Singbox节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月25日19.6M/S|免费Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Singbox节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-14-free-node-subscribe.htm" title="VPN爸爸 | 10月14日21.6M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月14日21.6M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-20-clash-stash.htm" title="VPN爸爸 | 10月20日20.7M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月20日20.7M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-10-clash-stash.htm" title="VPN爸爸 | 10月10日21.4M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月10日21.4M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR节点/Singbox节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-23-clash-verge-rev-node-share.htm" title="VPN爸爸 | 10月23日21.9M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月23日21.9M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-3-clash-stash.htm" title="VPN爸爸 | 10月3日20.3M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月3日20.3M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-5-clash-stash.htm" title="VPN爸爸 | 11月5日23M/S|免费SSR节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 11月5日23M/S|免费SSR节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-13-clash-verge-rev-node-share.htm" title="VPN爸爸 | 11月13日19.7M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 11月13日19.7M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-11-11-clash-verge-rev-node-share.htm" title="VPN爸爸 | 11月11日20.6M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 11月11日20.6M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-6-clash-verge-rev-node-github.htm" title="VPN爸爸 | 10月6日20.8M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月6日20.8M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-3-clash-stash.htm" title="VPN爸爸 | 10月3日20.3M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月3日20.3M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-22-clash-verge-rev-nodes.htm" title="VPN爸爸 | 10月22日18.6M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月22日18.6M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-14-free-node-subscribe.htm" title="VPN爸爸 | 10月14日21.6M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月14日21.6M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-3-clash-node.htm" title="VPN爸爸 | 11月3日18.4M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 11月3日18.4M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-15-clash-stash.htm" title="VPN爸爸 | 10月15日21.7M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月15日21.7M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-13-clash-meta-github.htm" title="VPN爸爸 | 10月13日18.5M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月13日18.5M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-12-node-share.htm" title="VPN爸爸 | 10月12日22.3M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月12日22.3M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-26-clash-verge-rev-node-share.htm" title="VPN爸爸 | 10月26日22.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 10月26日22.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-17-clash-meta-github.htm" title="VPN爸爸 | 11月17日19.5M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 11月17日19.5M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
                     </ul>
     </div>
 </div>
@@ -225,7 +226,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">21</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
