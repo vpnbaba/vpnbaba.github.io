@@ -259,11 +259,6 @@ sudo </span><span><span class="hljs-built_in">chmod</span></span><span> +x /usr/
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 与 Nekobox 有什么不同？</h5></div>
-    <div class="panel-body">
-        Nekoray 是一款基于 Qt 的跨平台代理前端，而 Nekobox 更偏向移动端简化使用。两者均支持 V2Ray/VLESS/Trojan 协议，但 Nekobox 提供了更轻量的界面和更快的连接启动速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 如何设置多入口实现不同访问控制？</h5></div>
     <div class="panel-body">
         通过定义多个 inbound，对不同端口绑定不同的 tag 并在路由中匹配流量。可针对内网用户、远程用户或特定 IP 段应用不同规则，实现灵活访问控制与流量隔离。<hr />    </div>
@@ -274,29 +269,9 @@ sudo </span><span><span class="hljs-built_in">chmod</span></span><span> +x /usr/
         TUN 模式拦截系统 IP 层流量，可实现全局代理。适合游戏、视频、浏览器和其他全局应用，实现低延迟和稳定连接，保证所有流量通过代理节点，提高访问速度和稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 节点使用 AEAD 加密有何优势？</h5></div>
-    <div class="panel-body">
-        AEAD 加密能提供更强的安全性和抗重放能力，同时减少加密头泄露特征。相比普通加密，更适合高封锁环境，兼顾安全与性能，保证长期稳定使用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 节点分组如何提升访问效率？</h5></div>
-    <div class="panel-body">
-        节点可按延迟、地区或用途分组，结合策略组实现自动分流。快速选择最优节点可提高网页、视频和游戏访问速度，同时优化节点管理和维护效率，提升整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>如何给 Clash 添加自定义域名白名单以提升访问体验？</h5></div>
     <div class="panel-body">
         在 rules 中添加 `DOMAIN-SUFFIX,example.com,DIRECT` 或 `DOMAIN-KEYWORD,example,DIRECT` 条目，将常用且可靠的站点设为直连，可减少代理绕行延迟并避免因代理造成的登录/验证问题。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 如何防止规则文件冲突导致分流异常？</h5></div>
-    <div class="panel-body">
-        合理组织规则顺序，将更具体的规则放在前面，通配规则放在末尾；使用 rule-providers 分离不同来源的规则，避免重复条目，并在变更后使用日志或 debug 模式检验分流是否按预期生效。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 延迟检测功能如何提高网络体验？</h5></div>
-    <div class="panel-body">
-        WinXray 会定期检测节点延迟，结合策略组自动切换到低延迟节点。保证网页、视频和游戏流量通过最佳节点，提高访问速度和连接稳定性，减少掉线和卡顿。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan 使用自签名证书会带来哪些问题？</h5></div>
@@ -306,7 +281,32 @@ sudo </span><span><span class="hljs-built_in">chmod</span></span><span> +x /usr/
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Surfboard 如何在 iPhone 上使用？</h5></div>
     <div class="panel-body">
-        从 App Store 下载 Surfboard 后，导入 Clash 订阅链接即可使用。Surfboard 提供直观的节点切换和规则管理界面，可查看实时延迟与流量数据，非常适合希望简单上手的 iOS 用户。    </div>
+        从 App Store 下载 Surfboard 后，导入 Clash 订阅链接即可使用。Surfboard 提供直观的节点切换和规则管理界面，可查看实时延迟与流量数据，非常适合希望简单上手的 iOS 用户。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 如何防止规则文件冲突导致分流异常？</h5></div>
+    <div class="panel-body">
+        合理组织规则顺序，将更具体的规则放在前面，通配规则放在末尾；使用 rule-providers 分离不同来源的规则，避免重复条目，并在变更后使用日志或 debug 模式检验分流是否按预期生效。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekoray 与 Nekobox 有什么不同？</h5></div>
+    <div class="panel-body">
+        Nekoray 是一款基于 Qt 的跨平台代理前端，而 Nekobox 更偏向移动端简化使用。两者均支持 V2Ray/VLESS/Trojan 协议，但 Nekobox 提供了更轻量的界面和更快的连接启动速度。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mihomo 节点分组如何提升访问效率？</h5></div>
+    <div class="panel-body">
+        节点可按延迟、地区或用途分组，结合策略组实现自动分流。快速选择最优节点可提高网页、视频和游戏访问速度，同时优化节点管理和维护效率，提升整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess 节点使用 AEAD 加密有何优势？</h5></div>
+    <div class="panel-body">
+        AEAD 加密能提供更强的安全性和抗重放能力，同时减少加密头泄露特征。相比普通加密，更适合高封锁环境，兼顾安全与性能，保证长期稳定使用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 延迟检测功能如何提高网络体验？</h5></div>
+    <div class="panel-body">
+        WinXray 会定期检测节点延迟，结合策略组自动切换到低延迟节点。保证网页、视频和游戏流量通过最佳节点，提高访问速度和连接稳定性，减少掉线和卡顿。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -336,15 +336,15 @@ sudo </span><span><span class="hljs-built_in">chmod</span></span><span> +x /usr/
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2"><a href="/free-nodes/2026-3-25-clash-verge-rev-github.htm" title="VPN爸爸 | 3月25日18.7M/S|免费SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/Trojan节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月25日18.7M/S|免费SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/Trojan节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-16-clash-v2ray-ss-ssr.htm" title="VPN爸爸 | 2月16日20.4M/S|免费SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 2月16日20.4M/S|免费SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-2-free-node-subscribe.htm" title="VPN爸爸 | 3月2日19.4M/S|免费Trojan节点/V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月2日19.4M/S|免费Trojan节点/V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-13-clash-node-daily-updates.htm" title="VPN爸爸 | 2月13日22.1M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 2月13日22.1M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-3-clash-node.htm" title="VPN爸爸 | 2月3日22.1M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 2月3日22.1M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-27-clash-meta-github.htm" title="VPN爸爸 | 3月27日21.7M/S|免费SSR节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月27日21.7M/S|免费SSR节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-9-clash-verge-rev-nodes.htm" title="VPN爸爸 | 3月9日21.9M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月9日21.9M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-20-clash-verge-rev-node-share.htm" title="VPN爸爸 | 3月20日21.7M/S|免费Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月20日21.7M/S|免费Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/Singbox节点/SSR节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-28-node-share.htm" title="VPN爸爸 | 2月28日21.3M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 2月28日21.3M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-20-clash-verge-rev-node-github.htm" title="VPN爸爸 | 2月20日19.8M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 2月20日19.8M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-12-clash-verge-rev-node-github.htm" title="VPN爸爸 | 3月12日19.7M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月12日19.7M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-4-clash-v2ray-ss-ssr.htm" title="VPN爸爸 | 3月4日21.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月4日21.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-10-clash-verge-rev-node-share.htm" title="VPN爸爸 | 3月10日19.2M/S|免费Shadowrocket节点/Trojan节点/Clash节点/Singbox节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月10日19.2M/S|免费Shadowrocket节点/Trojan节点/Clash节点/Singbox节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-21-clash-verge-rev-windows.htm" title="VPN爸爸 | 3月21日21.2M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月21日21.2M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-26-clash-v2ray-ss-ssr.htm" title="VPN爸爸 | 3月26日19.8M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月26日19.8M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-2-clash-stash.htm" title="VPN爸爸 | 4月2日18.6M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点/Trojan节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 4月2日18.6M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点/Trojan节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-15-clash-verge-rev-nodes.htm" title="VPN爸爸 | 3月15日22.8M/S|免费V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月15日22.8M/S|免费V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-14-clash-stash-node.htm" title="VPN爸爸 | 3月14日22.9M/S|免费Trojan节点/Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月14日22.9M/S|免费Trojan节点/Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-13-clash-stash-node.htm" title="VPN爸爸 | 3月13日21.9M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月13日21.9M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a></li>
                     </ul>
     </div>
 </div>
@@ -356,13 +356,10 @@ sudo </span><span><span class="hljs-built_in">chmod</span></span><span> +x /usr/
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2026-02/" title="2026-02 归档">2026-02</a></h4>
-            </li>
-                        <li class="py-2">
-                <h4><span class="badge" style="float: right;">18</span> <a href="/date/2026-01/" title="2026-01 归档">2026-01</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
             </li>
                     </ul>
     </div>
