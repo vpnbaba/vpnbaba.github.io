@@ -54,8 +54,7 @@
 
   gtag('config', 'G-34CXNX5RJ6');
 </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
-</head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6957240247502121" crossorigin="anonymous"></script></head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarExample" data-page="detail">
         <!-- Navigation -->
@@ -126,34 +125,14 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何备份 Clash 配置文件？</h5></div>
+    <div class="panel-heading"><h5>Hysteria2 的多路复用对短连接有何优势？</h5></div>
     <div class="panel-body">
-        Clash 的配置文件通常位于程序目录或配置文件夹中（如 Windows 下的 .config/clash）。用户可直接复制该 YAML 文件以备份，也可将订阅链接保存，便于后续恢复或在其他设备上同步使用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何用 systemd 管理 V2Ray/ Sing-box 服务？</h5></div>
-    <div class="panel-body">
-        创建 systemd 单元文件，指定 ExecStart 指令并设置 Restart=on-failure 与合适的 User/Group。启用服务并使用 `systemctl enable` 与 `systemctl start` 管理，便于开机自启与日志集中收集。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的 VMess gRPC 传输适合高延迟环境吗？</h5></div>
-    <div class="panel-body">
-        gRPC 支持长连接和多路复用，减少握手次数和连接延迟。高延迟环境下使用可保证流量稳定，特别适合移动网络和频繁访问海外网站的场景。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何实现端口与流量的精确分流？</h5></div>
-    <div class="panel-body">
-        Sing-box 支持按端口匹配流量，将不同类型应用的流量分配到指定节点。结合策略组使用，可提高访问速度和网络稳定性，实现精准分流和优化用户体验。<hr />    </div>
+        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接应用，如游戏和即时通讯，可提高吞吐量和连接稳定性，优化网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan TLS 伪装如何降低被封锁风险？</h5></div>
     <div class="panel-body">
         通过选择真实可访问的域名并安装有效证书，Trojan 流量可完全模拟 HTTPS 请求。这样可隐藏流量特征，降低被封锁和 DPI 检测的可能性，保证节点长期可用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 是否支持 DNS 分流？</h5></div>
-    <div class="panel-body">
-        支持。Clash 可以自定义 DNS 服务器，并通过 rules 区分国内外域名解析方式。比如国内网站可使用本地 DNS，国外网站可走代理 DNS，从而提升访问速度与稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 混淆方式如何增强隐蔽性？</h5></div>
@@ -166,14 +145,34 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         XTLS 模式通过减少握手和加密开销降低延迟。结合策略组和多节点切换，可在高延迟或不稳定网络环境下保证网页浏览、视频播放和游戏连接稳定，提高整体体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>如何备份 Clash 配置文件？</h5></div>
+    <div class="panel-body">
+        Clash 的配置文件通常位于程序目录或配置文件夹中（如 Windows 下的 .config/clash）。用户可直接复制该 YAML 文件以备份，也可将订阅链接保存，便于后续恢复或在其他设备上同步使用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 是否支持 DNS 分流？</h5></div>
+    <div class="panel-body">
+        支持。Clash 可以自定义 DNS 服务器，并通过 rules 区分国内外域名解析方式。比如国内网站可使用本地 DNS，国外网站可走代理 DNS，从而提升访问速度与稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 的 VMess gRPC 传输适合高延迟环境吗？</h5></div>
+    <div class="panel-body">
+        gRPC 支持长连接和多路复用，减少握手次数和连接延迟。高延迟环境下使用可保证流量稳定，特别适合移动网络和频繁访问海外网站的场景。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Surfboard 策略组如何提升游戏和视频体验？</h5></div>
     <div class="panel-body">
         通过策略组将游戏、视频和浏览器流量分配到低延迟、高带宽节点，Surfboard 可自动切换最优节点，减少延迟和卡顿，提高整体网络体验和访问速度。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的多路复用对短连接有何优势？</h5></div>
+    <div class="panel-heading"><h5>Sing-box 如何实现端口与流量的精确分流？</h5></div>
     <div class="panel-body">
-        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接应用，如游戏和即时通讯，可提高吞吐量和连接稳定性，优化网络体验。    </div>
+        Sing-box 支持按端口匹配流量，将不同类型应用的流量分配到指定节点。结合策略组使用，可提高访问速度和网络稳定性，实现精准分流和优化用户体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何用 systemd 管理 V2Ray/ Sing-box 服务？</h5></div>
+    <div class="panel-body">
+        创建 systemd 单元文件，指定 ExecStart 指令并设置 Restart=on-failure 与合适的 User/Group。启用服务并使用 `systemctl enable` 与 `systemctl start` 管理，便于开机自启与日志集中收集。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -202,16 +201,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-3-21-clash-verge-rev-windows.htm" title="VPN爸爸 | 3月21日21.2M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月21日21.2M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-14-clash-verge-rev-node-share.htm" title="VPN爸爸 | 4月14日22.8M/S|免费Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 4月14日22.8M/S|免费Trojan节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点/SSR节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-15-node-share.htm" title="VPN爸爸 | 4月15日22.2M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点/Trojan节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 4月15日22.2M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点/Trojan节点节点推荐，安卓机场梯子购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-3-12-clash-verge-rev-node-github.htm" title="VPN爸爸 | 3月12日19.7M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月12日19.7M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-15-clash-verge-rev-nodes.htm" title="VPN爸爸 | 3月15日22.8M/S|免费V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月15日22.8M/S|免费V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-8-clash-node.htm" title="VPN爸爸 | 3月8日21.4M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月8日21.4M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-7-clash-stash.htm" title="VPN爸爸 | 3月7日19.7M/S|免费Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月7日19.7M/S|免费Trojan节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-9-clash-verge-rev-nodes.htm" title="VPN爸爸 | 3月9日21.9M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月9日21.9M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-16-clash-verge-rev-windows.htm" title="VPN爸爸 | 4月16日21.6M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Trojan节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 4月16日21.6M/S|免费Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Trojan节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-3-23-clash-verge-rev-nodes.htm" title="VPN爸爸 | 3月23日18.2M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月23日18.2M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-16-clash-v2ray-ss-ssr.htm" title="VPN爸爸 | 3月16日18.9M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月16日18.9M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-11-node-share.htm" title="VPN爸爸 | 4月11日19.9M/S|免费Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 4月11日19.9M/S|免费Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-6-clash-verge-rev-github.htm" title="VPN爸爸 | 3月6日19.6M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点/Trojan节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月6日19.6M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点/Trojan节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-13-clash-stash-node.htm" title="VPN爸爸 | 3月13日21.9M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月13日21.9M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-18-clash-stash.htm" title="VPN爸爸 | 3月18日20M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月18日20M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-4-clash-v2ray-ss-ssr.htm" title="VPN爸爸 | 3月4日21.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月4日21.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-25-clash-verge-rev-github.htm" title="VPN爸爸 | 3月25日18.7M/S|免费SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/Trojan节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月25日18.7M/S|免费SSR节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/Trojan节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-18-clash-node-github.htm" title="VPN爸爸 | 4月18日20.3M/S|免费Trojan节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 4月18日20.3M/S|免费Trojan节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，安卓机场梯子购买推荐</a></li>
                     </ul>
     </div>
 </div>
@@ -223,7 +222,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
