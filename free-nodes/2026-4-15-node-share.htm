@@ -323,9 +323,9 @@ unzip v2ray-linux-64.zip -d /usr/bin/v2ray
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 节点测速功能如何优化连接？</h5></div>
+    <div class="panel-heading"><h5>Nekoray 节点订阅如何实现自动更新？</h5></div>
     <div class="panel-body">
-        Shadowrocket 定期测速节点延迟和丢包率，并结合策略组自动切换到最佳节点。保证网页、视频和游戏流量通过最优路径，提高访问速度和连接稳定性。<hr />    </div>
+        用户可添加订阅 URL，Nekoray 会定期自动下载并更新节点列表。保持节点最新可减少手动维护，提高节点可用性和网络连接稳定性，确保科学上网体验顺畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan-go 与原版 Trojan 有什么不同？</h5></div>
@@ -333,19 +333,9 @@ unzip v2ray-linux-64.zip -d /usr/bin/v2ray
         Trojan-go 在原版 Trojan 基础上扩展了多协议支持、WebSocket、gRPC、mux 多路复用等特性，同时优化性能并支持更丰富的客户端。相比原版，它更灵活，适合高级用户或多平台部署需求。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 如何通过节点测速自动切换最优线路？</h5></div>
-    <div class="panel-body">
-        WinXray 会定期检测节点延迟和丢包率，并结合策略组自动选择最佳节点。保证网页浏览、视频播放和游戏流量走低延迟节点，提高访问速度和网络稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Hysteria2 协议的主要特点是什么？</h5></div>
     <div class="panel-body">
         Hysteria2 是新一代基于 QUIC 的高速代理协议，支持自适应拥塞控制和零 RTT 连接。相比传统 TCP 协议，它能在高延迟或丢包环境下保持稳定速度，特别适合跨境访问或实时传输场景。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 节点订阅如何实现自动更新？</h5></div>
-    <div class="panel-body">
-        用户可添加订阅 URL，Nekoray 会定期自动下载并更新节点列表。保持节点最新可减少手动维护，提高节点可用性和网络连接稳定性，确保科学上网体验顺畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Mellow 如何通过配置实现多出口分流？</h5></div>
@@ -353,9 +343,9 @@ unzip v2ray-linux-64.zip -d /usr/bin/v2ray
         Mellow 可在配置文件中定义多个 outbound，并结合 routing 规则实现按域名、IP 或策略组分流。这样不同类型的流量可走不同节点，提高使用体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 如何结合策略组实现自动节点切换？</h5></div>
+    <div class="panel-heading"><h5>QuantumultX 如何实现按协议类型分流？</h5></div>
     <div class="panel-body">
-        PassWall2 会定期测试节点延迟和丢包率，结合策略组自动切换到最优节点。无需手动干预即可保证网页、视频和游戏流量高速稳定访问，优化整体网络体验。<hr />    </div>
+        QuantumultX 可根据 TCP、UDP 或特定应用协议分流流量，结合策略组选择节点。这样可以为游戏、视频或广告屏蔽等应用提供最佳网络体验，提高访问速度和稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekobox 可以定时更新订阅节点吗？</h5></div>
@@ -363,14 +353,24 @@ unzip v2ray-linux-64.zip -d /usr/bin/v2ray
         支持。用户可设置定时更新频率，例如每天或每小时，程序会自动下载订阅节点并替换旧节点，确保节点始终可用并保持最新线路信息。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 如何实现按协议类型分流？</h5></div>
-    <div class="panel-body">
-        QuantumultX 可根据 TCP、UDP 或特定应用协议分流流量，结合策略组选择节点。这样可以为游戏、视频或广告屏蔽等应用提供最佳网络体验，提高访问速度和稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Nekoray 支持节点订阅批量更新吗？</h5></div>
     <div class="panel-body">
-        支持。用户可通过订阅 URL 批量更新节点，程序会自动下载并替换旧节点。定期更新保证节点列表始终可用，减少手动维护，提高使用效率和便利性。    </div>
+        支持。用户可通过订阅 URL 批量更新节点，程序会自动下载并替换旧节点。定期更新保证节点列表始终可用，减少手动维护，提高使用效率和便利性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 如何通过节点测速自动切换最优线路？</h5></div>
+    <div class="panel-body">
+        WinXray 会定期检测节点延迟和丢包率，并结合策略组自动选择最佳节点。保证网页浏览、视频播放和游戏流量走低延迟节点，提高访问速度和网络稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>PassWall2 如何结合策略组实现自动节点切换？</h5></div>
+    <div class="panel-body">
+        PassWall2 会定期测试节点延迟和丢包率，结合策略组自动切换到最优节点。无需手动干预即可保证网页、视频和游戏流量高速稳定访问，优化整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 节点测速功能如何优化连接？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 定期测速节点延迟和丢包率，并结合策略组自动切换到最佳节点。保证网页、视频和游戏流量通过最优路径，提高访问速度和连接稳定性。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -399,16 +399,16 @@ unzip v2ray-linux-64.zip -d /usr/bin/v2ray
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-3-4-clash-v2ray-ss-ssr.htm" title="VPN爸爸 | 3月4日21.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月4日21.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-10-clash-verge-rev-node-share.htm" title="VPN爸爸 | 3月10日19.2M/S|免费Shadowrocket节点/Trojan节点/Clash节点/Singbox节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月10日19.2M/S|免费Shadowrocket节点/Trojan节点/Clash节点/Singbox节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-29-clash-stash-node.htm" title="VPN爸爸 | 3月29日18.6M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Trojan节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月29日18.6M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Trojan节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-26-clash-v2ray-ss-ssr.htm" title="VPN爸爸 | 3月26日19.8M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月26日19.8M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/SSR节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-12-clash-node.htm" title="VPN爸爸 | 4月12日20.5M/S|免费Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/Singbox节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 4月12日20.5M/S|免费Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/Singbox节点/SSR节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-16-clash-v2ray-ss-ssr.htm" title="VPN爸爸 | 3月16日18.9M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月16日18.9M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-10-clash-verge-rev-node.htm" title="VPN爸爸 | 4月10日20.4M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 4月10日20.4M/S|免费Trojan节点/SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-11-clash-stash-node.htm" title="VPN爸爸 | 3月11日22.8M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月11日22.8M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-13-clash-stash-node.htm" title="VPN爸爸 | 3月13日21.9M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月13日21.9M/S|免费Clash节点/V2ray节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-21-clash-verge-rev-windows.htm" title="VPN爸爸 | 3月21日21.2M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 3月21日21.2M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-9-clash-verge-rev-github.htm" title="VPN爸爸 | 5月9日22.5M/S|免费Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 5月9日22.5M/S|免费Singbox节点/V2ray节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-5-clash-verge-rev-node.htm" title="VPN爸爸 | 5月5日22.5M/S|免费Clash节点/V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 5月5日22.5M/S|免费Clash节点/V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-20-clash-node-github.htm" title="VPN爸爸 | 4月20日19.2M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Singbox节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 4月20日19.2M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Singbox节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-7-clash-node-github.htm" title="VPN爸爸 | 5月7日21M/S|免费V2ray节点/Trojan节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 5月7日21M/S|免费V2ray节点/Trojan节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-10-clash-node-daily-updates.htm" title="VPN爸爸 | 5月10日18.8M/S|免费Trojan节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 5月10日18.8M/S|免费Trojan节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-2-clash-stash.htm" title="VPN爸爸 | 5月2日22.7M/S|免费SSR节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 5月2日22.7M/S|免费SSR节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-6-clash-verge-rev-windows.htm" title="VPN爸爸 | 5月6日22.4M/S|免费V2ray节点/SSR节点/Trojan节点/Clash节点/Shadowrocket节点/Singbox节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 5月6日22.4M/S|免费V2ray节点/SSR节点/Trojan节点/Clash节点/Shadowrocket节点/Singbox节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-17-free-node-subscribe.htm" title="VPN爸爸 | 4月17日18.2M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 4月17日18.2M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-3-clash-node-github.htm" title="VPN爸爸 | 5月3日18.1M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 5月3日18.1M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点节点推荐，安卓机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-29-clash-verge-rev-node-github.htm" title="VPN爸爸 | 4月29日20.1M/S|免费Singbox节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 4月29日20.1M/S|免费Singbox节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点节点推荐，安卓机场梯子购买推荐</a></li>
                     </ul>
     </div>
 </div>
@@ -420,10 +420,10 @@ unzip v2ray-linux-64.zip -d /usr/bin/v2ray
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
+                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                     </ul>
     </div>
