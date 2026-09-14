@@ -359,39 +359,9 @@ VPN全局加密、适用于所有App；代理通常只对浏览器生效，数�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的 PAC 模式如何应用？</h5></div>
-    <div class="panel-body">
-        PAC 模式根据规则自动判断流量是否走代理，无需手动切换节点。适合访问国内外混合网站环境，提高网络访问速度和稳定性，减少误操作导致的访问失败。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 的 TUN 模式与系统代理有何区别？</h5></div>
-    <div class="panel-body">
-        TUN 模式直接拦截 IP 层流量，实现全局代理，而系统代理通常仅影响支持代理的应用。TUN 更适合游戏、视频或全局科学上网场景，确保所有流量经过代理节点。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的路由规则如何实现国内直连？</h5></div>
-    <div class="panel-body">
-        通过配置域名列表或 IP 段，将国内流量指向直连出口，而国外流量走代理节点。结合策略组和定期更新规则，可保持国内访问速度，同时优化海外访问体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess TLS 与 WebSocket 组合有哪些优势？</h5></div>
-    <div class="panel-body">
-        TLS + WebSocket 可将 VMess 流量伪装为 HTTPS，隐藏真实通信特征。结合策略组使用，可增强抗封锁能力，提高节点稳定性和访问速度，特别适合视频和游戏场景。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 的全局代理如何启用？</h5></div>
-    <div class="panel-body">
-        在 Mellow 中可通过开启 TUN 模式来启用全局代理。启用后，系统的所有流量都会经过代理转发，可实现全面科学上网。需注意系统防火墙可能会提示权限请求。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Mellow TUN 模式与 SOCKS5 代理有什么区别？</h5></div>
     <div class="panel-body">
         TUN 模式拦截系统 IP 层流量，实现全局代理；SOCKS5 代理通常只影响指定应用。TUN 更适合全局加速，如游戏、视频和浏览器流量，提高网络稳定性和覆盖范围。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 如何管理多协议节点和分流？</h5></div>
-    <div class="panel-body">
-        Nekobox 可同时管理 Shadowsocks、VMess、Trojan 等多协议节点。结合策略组和分流规则，可实现不同流量走不同节点，提升网络效率和管理便利性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Mihomo 的节点分类功能有哪些好处？</h5></div>
@@ -406,7 +376,37 @@ VPN全局加密、适用于所有App；代理通常只对浏览器生效，数�
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Netch 的 UDP 转发如何配置？</h5></div>
     <div class="panel-body">
-        Netch 可在客户端设置 UDP 转发开关，选择需要代理的 UDP 流量端口或应用。适用于游戏、语音或实时视频，确保这些应用在代理环境下低延迟且稳定。    </div>
+        Netch 可在客户端设置 UDP 转发开关，选择需要代理的 UDP 流量端口或应用。适用于游戏、语音或实时视频，确保这些应用在代理环境下低延迟且稳定。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 的 PAC 模式如何应用？</h5></div>
+    <div class="panel-body">
+        PAC 模式根据规则自动判断流量是否走代理，无需手动切换节点。适合访问国内外混合网站环境，提高网络访问速度和稳定性，减少误操作导致的访问失败。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekobox 如何管理多协议节点和分流？</h5></div>
+    <div class="panel-body">
+        Nekobox 可同时管理 Shadowsocks、VMess、Trojan 等多协议节点。结合策略组和分流规则，可实现不同流量走不同节点，提升网络效率和管理便利性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 的 TUN 模式与系统代理有何区别？</h5></div>
+    <div class="panel-body">
+        TUN 模式直接拦截 IP 层流量，实现全局代理，而系统代理通常仅影响支持代理的应用。TUN 更适合游戏、视频或全局科学上网场景，确保所有流量经过代理节点。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 的路由规则如何实现国内直连？</h5></div>
+    <div class="panel-body">
+        通过配置域名列表或 IP 段，将国内流量指向直连出口，而国外流量走代理节点。结合策略组和定期更新规则，可保持国内访问速度，同时优化海外访问体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 的全局代理如何启用？</h5></div>
+    <div class="panel-body">
+        在 Mellow 中可通过开启 TUN 模式来启用全局代理。启用后，系统的所有流量都会经过代理转发，可实现全面科学上网。需注意系统防火墙可能会提示权限请求。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess TLS 与 WebSocket 组合有哪些优势？</h5></div>
+    <div class="panel-body">
+        TLS + WebSocket 可将 VMess 流量伪装为 HTTPS，隐藏真实通信特征。结合策略组使用，可增强抗封锁能力，提高节点稳定性和访问速度，特别适合视频和游戏场景。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -454,16 +454,16 @@ VPN全局加密、适用于所有App；代理通常只对浏览器生效，数�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-8-14-free-node-subscribe.htm" title="VPN爸爸 | 8月14日21M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月14日21M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-18-clash-meta-github.htm" title="VPN爸爸 | 8月18日22.8M/S|免费Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月18日22.8M/S|免费Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-22-clash-verge-rev-node-share.htm" title="VPN爸爸 | 8月22日21.7M/S|免费Singbox节点/V2ray节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月22日21.7M/S|免费Singbox节点/V2ray节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-30-clash-verge-rev-node-github.htm" title="VPN爸爸 | 8月30日18.9M/S|免费Clash节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月30日18.9M/S|免费Clash节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-windows-2026-8-19.htm" title="VPN爸爸 | 8月19日21.5M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Trojan节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月19日21.5M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Trojan节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-9-1.htm" title="VPN爸爸 | 9月1日22.7M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点/Trojan节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 9月1日22.7M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/SSR节点/Trojan节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-node-2026-8-9.htm" title="VPN爸爸 | 8月9日20.4M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点/Singbox节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月9日20.4M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点/Singbox节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-9-13.htm" title="VPN爸爸 | 9月13日22.1M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 9月13日22.1M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-2026-9-3.htm" title="VPN爸爸 | 9月3日22.5M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 9月3日22.5M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-26-clash-verge-rev-nodes.htm" title="VPN爸爸 | 8月26日18.6M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月26日18.6M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/SSR节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-node-github-2026-8-15.htm" title="VPN爸爸 | 8月15日21.5M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点/Trojan节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月15日21.5M/S|免费V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点/Trojan节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-8-clash-stash-node.htm" title="VPN爸爸 | 8月8日22.1M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月8日22.1M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-8-21.htm" title="VPN爸爸 | 8月21日22.3M/S|免费Trojan节点/SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月21日22.3M/S|免费Trojan节点/SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-8-16-clash-stash-node.htm" title="VPN爸爸 | 8月16日22.3M/S|免费Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月16日22.3M/S|免费Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/SSR节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-github-2026-8-25.htm" title="VPN爸爸 | 8月25日19M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月25日19M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-8-11.htm" title="VPN爸爸 | 8月11日22.7M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月11日22.7M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-windows-2026-8-27.htm" title="VPN爸爸 | 8月27日18.8M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月27日18.8M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点/SSR节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-6-clash-meta-github.htm" title="VPN爸爸 | 9月6日20.4M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 9月6日20.4M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点/V2ray节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-verge-rev-github-2026-8-31.htm" title="VPN爸爸 | 8月31日21.8M/S|免费V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐">VPN爸爸 | 8月31日21.8M/S|免费V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点节点推荐，安卓机场梯子购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -475,7 +475,7 @@ VPN全局加密、适用于所有App；代理通常只对浏览器生效，数�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">7</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
